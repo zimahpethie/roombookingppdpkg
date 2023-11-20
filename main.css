@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  background: url(img/5.jpg) fixed;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+padding: 60px;
+  text-align: center;
+  background: url(img/1.png)no-repeat;
+  width: auto%;
+  height: 300px;
+  text-shadow: 2px 2px 4px #000000;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+h2 {
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-bottom: 6px ridge #D8D8D8;
+}
+
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #D8D8D8;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #848484;
+  color: white;
+}
+
+/* Column container */
+.container {  
+  width: 1400px;
+  background-color: white;
+  position: center;
+  margin: 0 auto;
+  padding: 15px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+	background-color: #D8D8D8;
+	font-size: 12px;
+	text-align: center;
+	padding: 25px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+/* Booking Form */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #045FB4;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #848484;
+}
+
+.output {
+float: right;
+  width: 75%;
+  margin-top: 6px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+.form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*Home Page*/
+.img-container {
+  float: left;
+  width: 20%;
+  margin:25px;
+  padding: 20px;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button {
+  background-color: #A9BCF5; 
+  border: none;
+  color: black;
+  border-radius: 3px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #bdbdbd; 
+}
+
+/*slider*/
+.mySlides {display:none;}
+
+/*error and succes login*/
+.error {
+  background-color: #E6E6E6; color:#FF0000; text-align:center; font-size:20px;
+}
+.success {
+  background-color: #E6E6E6; color:#FF0000; text-align:center; font-size:20px;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
