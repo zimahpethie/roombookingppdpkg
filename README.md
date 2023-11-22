@@ -8,6 +8,7 @@ Room Booking System for PPD and PKG Mukah is developed to replace the manual boo
 1. After pull the code from git, go to mysql phpmyadmin and create database name "roombookingppdpkg"
 2. Then you can access the local system by using link http://localhost/roombookingppdpkg/ 
 
+![image](https://github.com/zimahpethie/roombookingppdpkg/assets/74373523/9ed21552-0a34-47ab-ae5a-c03447ce3677)
 
 
 
